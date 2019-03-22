@@ -3,11 +3,13 @@
     "sdk": 2,
     "name": {
         "en": "Sun Events",
-        "nl": "Zonnestanden"
+        "nl": "Zonnestanden",
+        "de": "Sonnenereignisse"
     },
     "description": {
         "en": "Triggers you at certain positions of the sun.",
-        "nl": "Bij diverse zonnestanden kunt u triggers maken, u kunt ook uw eigen events defineren."
+        "nl": "Bij diverse zonnestanden kunt u triggers maken, u kunt ook uw eigen events defineren.",
+        "de": "Wird an bestimmten Positionen der Sonne ausgelöst."
     },
     "category": "tools",
     "images": {
@@ -15,7 +17,7 @@
         "small": "./assets/images/small.jpg"
     },
     "brandColor": "#E8461D",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "compatibility": ">=2.0.0",
     "contributing": {
         "donate": {
@@ -28,6 +30,9 @@
         "name": "Marcel Timmermans",
         "email": "marcel@timmermans.us"
     },
+    "contributors": {
+		"translators": [{"name": "🇬🇧 Marcel Timmermans"},{"name": "🇳🇱 Marcel Timmermans"},{"name": "🇩🇪 Philipp Schnittger"}]
+	},
     "permissions": [
         "homey:manager:geolocation"
     ],
@@ -36,27 +41,31 @@
             "id": "sun_event",
             "title": {
                 "en": "Sun Events (offset in min)",
-                "nl": "Zonnestanden events (offset in min)"
+                "nl": "Zonnestanden events (offset in min)",
+                "de": "Sonnenereignisse (Offset in Min)"
             },
             "tokens": [{
                     "name": "event",
                     "title": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 },
                 {
                     "name": "se_time",
                     "title": {
                         "en": "Time",
-                        "nl": "Tijd"
+                        "nl": "Tijd",
+                        "de": "Zeit"
                     }
                 },
                 {
                     "name": "se_date",
                     "title": {
                         "en": "Date",
-                        "nl": "Datum"
+                        "nl": "Datum",
+                        "de": "Datum"
                     }
                 }
             ],
@@ -65,7 +74,8 @@
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 },
                 {
@@ -77,7 +87,8 @@
                     "value": 0,
                     "placeholder": {
                         "en": "Offset in minutes",
-                        "nl": "Offset in minuten"
+                        "nl": "Offset in minuten",
+                        "de": "Offset in Minuten"
                     }
                 }
             ]
@@ -86,14 +97,16 @@
             "id": "cond_sun_event",
             "title": {
                 "en": "It !{{is|isn't}} after ",
-                "nl": "Het !{{is|is niet}} na "
+                "nl": "Het !{{is|is niet}} na ",
+                "de": "Es !{{ist|ist nicht }} nach "
             },
             "args": [{
                     "name": "event",
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 },
                 {
@@ -105,7 +118,8 @@
                     "value": 0,
                     "placeholder": {
                         "en": "Offset in minutes",
-                        "nl": "Offset in minuten"
+                        "nl": "Offset in minuten",
+                        "de": "Offset in Minuten"
                     }
                 }
             ]
@@ -113,14 +127,16 @@
             "id": "cond_sun_event_time",
             "title": {
                 "en": "It !{{is|isn't}} after ",
-                "nl": "Het !{{is|is niet}} na "
+                "nl": "Het !{{is|is niet}} na ",
+                "de": "Es !{{ist|ist nicht }} nach "
             },
             "args": [{
                     "name": "event",
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 },
                 {
@@ -132,14 +148,16 @@
             "id": "cond_sun_event_between",
             "title": {
                 "en": "It !{{is|isn't}} between ",
-                "nl": "Het !{{is|is niet}} tussen "
+                "nl": "Het !{{is|is niet}} tussen ",
+                "de": "Es !{{ist|ist nicht }} zwischen "
             },
             "args": [{
                     "name": "eventA",
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 },
                 {
@@ -147,7 +165,8 @@
                     "type": "autocomplete",
                     "placeholder": {
                         "en": "Event",
-                        "nl": "Event"
+                        "nl": "Event",
+                        "de": "Ereignis"
                     }
                 }
             ]
