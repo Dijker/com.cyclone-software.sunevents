@@ -126,9 +126,9 @@
         },{
             "id": "cond_sun_event_time",
             "title": {
-                "en": "It !{{is|isn't}} after ",
-                "nl": "Het !{{is|is niet}} na ",
-                "de": "Es !{{ist|ist nicht }} nach "
+                "en": "Event !{{is|isn't}} after ",
+                "nl": "Gebeurtenis !{{is|is niet}} na tijd ",
+                "de": "Event !{{ist|ist nicht }} nach "
             },
             "args": [{
                     "name": "event",
